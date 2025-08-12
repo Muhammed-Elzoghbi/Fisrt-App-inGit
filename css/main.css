@@ -1,0 +1,32 @@
+:root{
+  --bg:#f7f8fb; --card:#fff; --accent:#2563eb; --muted:#6b7280;
+  --radius:10px; --shadow:0 6px 18px rgba(16,24,40,0.08);
+  --pad:16px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:Inter,system-ui,Segoe UI,Arial;color:#0f172a;background:var(--bg);-webkit-font-smoothing:antialiased}
+
+.container{max-width:980px;margin:36px auto;padding:0 16px}
+
+/* simple header */
+.header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.site-title{font-weight:700;font-size:1.15rem}
+
+/* card */
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:var(--pad)}
+
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(37,99,235,0.12)}
+
+/* inputs */
+.input{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:transparent;outline:none}
+.input:focus{box-shadow:0 0 0 4px rgba(37,99,235,0.08);border-color:var(--accent)}
+
+/* small utility */
+.small{font-size:.9rem;color:var(--muted)}
+.center{text-align:center}
